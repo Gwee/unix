@@ -1,0 +1,5 @@
+city=$1
+P10.4.1 $city
+s1="$(egrep -o "in [A-Za-z, ]+" tmp | head -1)"
+t1="$(egrep -o "[0-9][0-9]:[0-9][0-9]" tmp | head -1)"
+echo "The current time in $s1 is: $t1"

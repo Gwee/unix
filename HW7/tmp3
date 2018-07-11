@@ -1,0 +1,2 @@
+#!/usr/bin/awk -f
+BEGIN {printf "%-8s %6s %7s %4s\n" ,$1, $2, $3, $4}

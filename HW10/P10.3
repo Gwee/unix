@@ -1,0 +1,14 @@
+d1=$1
+d2=$2
+m="$(echo $d1 | cut -d"/" -f2)"
+d="$(echo $d1 | cut -d"/" -f1)"
+y="$(echo $d1 | cut -d"/" -f3)"
+d1="$m/$d/$y"
+m="$(echo $d2 | cut -d"/" -f2)"
+d="$(echo $d2 | cut -d"/" -f1)"
+y="$(echo $d2 | cut -d"/" -f3)"
+d2="$m/$d/$y"
+P10.3.1 $d1 $d2
+dd="$(egrep -o "= [0-9]+ days" tmp | cut -d" " -f2)"
+s="The number of days between $1 and $2 is:$dd"
+echo $s

@@ -1,0 +1,19 @@
+#!/usr/bin/expect
+log_user 0
+file delete -force tmp
+#set timeout 2
+set date1 [lindex $argv 0]
+set date2 [lindex $argv 1]
+set Alt "\033"
+set cu "\025"
+set ar "\033\[B"
+set time "0:00"
+spawn elinks https://www.calculatorsoup.com/calculators/time/time-date-difference-calculator.php
+sleep 4
+expect "Link" {send "22\n"}
+expect "Time" {send "\n$cu$date1$ar\n$cu$time$ar\n$cu$date2$ar\n$cu$time$ar\n$ar\n\n"}
+sleep 4
+expect "Time" {send "${Alt}fv${cu}tmp\n"}
+expect * {send "q"}
+expect * {send "y"}
+expect

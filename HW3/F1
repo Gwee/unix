@@ -1,0 +1,11 @@
+./AA: line 1: echo1: command not found
+./AA: line 1: echo1: command not found
+1
+1
+2
+2
+abc
+abc
+./AA: line 4: seq2: command not found
+./AA: line 4: seq2: command not found
+

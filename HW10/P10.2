@@ -1,0 +1,14 @@
+#!/bin/awk -f
+function is_date_less_than(date1,date2,A,d1,d2,m1,m2,y1,y2){
+  split(date1,A,"/")
+  d1=A[1];m1=A[2];y1=A[3]
+  split(date2,A,"/")
+  d2=A[1];m2=A[2];y2=A[3]
+  if (y1<y2) return "YES"
+  if (y1>y2) return "NO"
+  if (m1<m2) return "YES"
+  if (m1>m2) return "NO"
+  if (d1<d2) return "YES"
+  return "NO"
+}
+BEGIN { print is_date_less_than(ARGV[1],ARGV[2]) }

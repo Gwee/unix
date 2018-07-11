@@ -1,0 +1,27 @@
+#!/usr/bin/expect
+log_user 0
+file delete -force tmp
+#set timeout 2
+set city [lindex $argv 0]
+set Alt "\033"
+set Ctrl_u "\025"
+spawn elinks http://www.checktimes.com/
+sleep 4
+expect "Current" {send "9\n"}
+expect "Value" {send "\n$Ctrl_u$city\n"}
+expect "form" {send "\n"}
+sleep 4
+expect {
+ "Current" {
+    expect "Time" {send "${Alt}fvtmp\n"}
+    expect * {send "q"}
+    expect * {send "y"}
+    expect
+} "Results" {
+    expect * {send "6\n\n"}
+    sleep 4
+    expect "Time" {send "${Alt}fv${Ctrl_u}tmp\n"}
+    expect * {send "q"}
+    expect * {send "y"}
+    expect
+} }                        

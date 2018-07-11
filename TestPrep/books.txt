@@ -1,0 +1,17 @@
+1234:Crime and Punishment:F. Dostoevsky:1/1/2016:20/1/2016
+1232:The Hobbit:J. R. R. Tolkien:-:-
+1234:Crime and Punishment:F. Dostoevsky:1/2/2016:-
+1234:The Hobbit:J. R. R. Tolkien:1/10/2015:5/11/2015
+1232:The Hobbit:J. R. R. Tolkien:10/10/2014:1/1/2015
+2111:Crime and Punishment:F. Dostoevsky:20/1/2016:-
+2111:Crime and Punishment:F. Dostoevsky:20/3/2015:12/4/2015
+1233:The Hobbit:J. R. R. Tolkien:8/1/2016:-
+1220:The Gambler:F. Dostoevsky:-:-
+2112:The Gambler:F. Dostoevsky:20/1/2016:-
+2112:The Gambler:F. Dostoevsky:20/1/2015:20/2/2015 3007:The Shack:William P. Young:10/10/2015:-
+1236:The Hobbit:J. R. R. Tolkien:-:-
+4111:The Idiot:F. Dostoevsky:20/1/2017:20/2/2017
+3001:The Shack:William P. Young:25/1/2016:-
+5002:The Brothers Karamazov:F. Dostoevsky:12/1/2017:-
+5004:The House of the Dead:F. Dostoevsky:13/1/2017:12/2/2017
+
